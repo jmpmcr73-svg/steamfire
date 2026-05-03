@@ -1,0 +1,57 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+!dashboard/.env.local.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+dist/
+build/
+
+# Pesos modelos
+weights/
+*.onnx
+*.pt
+*.pth
+*.pkl
+!**/scenarios.json
+
+# Datos quemas y telemetría
+data/
+captures/
+*.csv
+*.parquet
+recordings/
+
+# Next.js / Vercel
+dashboard/.next/
+dashboard/out/
+dashboard/node_modules/
+dashboard/.vercel/
+
+# Node
+node_modules/
+*.log
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs locales
+logs/
+
+# Supabase local
+supabase/.branches
+supabase/.temp

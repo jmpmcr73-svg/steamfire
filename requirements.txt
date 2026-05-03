@@ -1,0 +1,39 @@
+# Core
+supabase>=2.7.0
+postgrest>=0.16.0
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+httpx>=0.27.0
+
+# IA / IA edge
+google-generativeai>=0.7.0
+onnxruntime>=1.18.0   # cuda variant en Jetson: onnxruntime-gpu
+opencv-python-headless>=4.10.0
+numpy>=1.26.0
+scipy>=1.13.0
+scikit-learn>=1.5.0   # P-Flash SVR + clustering
+
+# mmWave processing
+pyserial>=3.5         # comunicación HLK-LD2410B
+filterpy>=1.4.5       # Kalman tracking
+
+# Time-series
+pandas>=2.2.0
+numba>=0.59.0
+
+# Bots y comunicación
+python-telegram-bot>=21.0
+twilio>=9.0.0         # WhatsApp
+
+# Loops async
+asyncio
+aiohttp>=3.9.0
+uvloop>=0.19.0; sys_platform != "win32"
+
+# Logging y observabilidad
+structlog>=24.1.0
+rich>=13.7.0
+
+# Test (dev)
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
